@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket io</title>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="dist/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <h2 class="ui header">Hello socket</h2>
+    <table>
+        <tr>
+            <td>X</td>
+            <td id="xRow"></td>
+        </tr>
+        <tr>
+            <td>Y</td>
+            <td id="yRow"></td>
+        </tr>
+        <tr>
+            <td>Z</td>
+            <td id="zRow"></td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td id="iRow"></td>
+        </tr>
+    </table>
+    <hr />
+    <div id="chart"></div>
+    <hr />
+    <!-- <canvas id="myChart" width="1500" height="450"></canvas> -->
+
+</body>
+<script src="js/socket.js"></script>
+
+</html>
