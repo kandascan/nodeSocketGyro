@@ -1,4 +1,4 @@
-const HOST_URL = 'http://192.168.43.223:3000';
+const HOST_URL = 'https://androidgyrosocket.herokuapp.com';
 var socket = io.connect(HOST_URL);
 
 var cnt = 0;
@@ -24,7 +24,7 @@ Plotly.plot('chart', [{
 }]);
 
 socket.on('recieveAccelerometerDatea', data => {
-    // console.log(data);
+     //console.log(data);
     var x = document.getElementById("xRow");
     x.innerHTML = data.x;
     var y = document.getElementById("yRow");
